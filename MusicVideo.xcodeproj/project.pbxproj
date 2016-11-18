@@ -14,6 +14,7 @@
 		44FDE4DA1DDF6AB900E5A37F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FDE4D81DDF6AB900E5A37F /* LaunchScreen.storyboard */; };
 		44FDE4E51DDF6AB900E5A37F /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FDE4E41DDF6AB900E5A37F /* MusicVideoTests.swift */; };
 		44FDE4F01DDF6AB900E5A37F /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FDE4EF1DDF6AB900E5A37F /* MusicVideoUITests.swift */; };
+		44FDE4FF1DDF6B3500E5A37F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FDE4FE1DDF6B3500E5A37F /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		44FDE4EB1DDF6AB900E5A37F /* MusicVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FDE4EF1DDF6AB900E5A37F /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		44FDE4F11DDF6AB900E5A37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FDE4FE1DDF6B3500E5A37F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FDE4FF1DDF6B3500E5A37F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				44FDE4E31DDF6AB900E5A37F /* MusicVideoTests */,
 				44FDE4EE1DDF6AB900E5A37F /* MusicVideoUITests */,
 				44FDE4CD1DDF6AB900E5A37F /* Products */,
+				44FDE4FD1DDF6B3500E5A37F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +101,10 @@
 		44FDE4CE1DDF6AB900E5A37F /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
-				44FDE4CF1DDF6AB900E5A37F /* AppDelegate.swift */,
-				44FDE4D11DDF6AB900E5A37F /* ViewController.swift */,
-				44FDE4D31DDF6AB900E5A37F /* Main.storyboard */,
-				44FDE4D61DDF6AB900E5A37F /* Assets.xcassets */,
-				44FDE4D81DDF6AB900E5A37F /* LaunchScreen.storyboard */,
-				44FDE4DB1DDF6AB900E5A37F /* Info.plist */,
+				44FDE5031DDF6DA100E5A37F /* Supporting Files */,
+				44FDE5001DDF6D3300E5A37F /* Model */,
+				44FDE5011DDF6D4600E5A37F /* Controller */,
+				44FDE5021DDF6D8000E5A37F /* View */,
 			);
 			path = MusicVideo;
 			sourceTree = "<group>";
@@ -123,6 +125,48 @@
 				44FDE4F11DDF6AB900E5A37F /* Info.plist */,
 			);
 			path = MusicVideoUITests;
+			sourceTree = "<group>";
+		};
+		44FDE4FD1DDF6B3500E5A37F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44FDE4FE1DDF6B3500E5A37F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44FDE5001DDF6D3300E5A37F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		44FDE5011DDF6D4600E5A37F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44FDE4D11DDF6AB900E5A37F /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		44FDE5021DDF6D8000E5A37F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44FDE4D81DDF6AB900E5A37F /* LaunchScreen.storyboard */,
+				44FDE4D31DDF6AB900E5A37F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		44FDE5031DDF6DA100E5A37F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44FDE4DB1DDF6AB900E5A37F /* Info.plist */,
+				44FDE4CF1DDF6AB900E5A37F /* AppDelegate.swift */,
+				44FDE4D61DDF6AB900E5A37F /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +239,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Q2FY5AEHQW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					44FDE4DF1DDF6AB900E5A37F = {
 						CreatedOnToolsVersion = 8.1;
